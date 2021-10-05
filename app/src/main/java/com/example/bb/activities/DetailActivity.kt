@@ -19,6 +19,7 @@ class DetailActivity : AppCompatActivity() {
 
         val binding = DataBindingUtil.setContentView<ActivityDetailBinding>(this, R.layout.activity_detail)
         val bundle: Bundle? = intent.extras
+
         if (bundle != null){
             val BBcharacter = bundle.getParcelable<Characters>(CHARACTER_KEY)
             Glide

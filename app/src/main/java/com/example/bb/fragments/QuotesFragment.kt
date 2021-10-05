@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.bb.R
 import com.example.bb.databinding.FragmentQuotesBinding
 import com.example.bb.models.Quotes
 import com.example.bb.viewModels.QuotesViewModel
@@ -33,5 +34,10 @@ class QuotesFragment : Fragment() {
             binding.nameQuotes.text = quotes[0].author
         })
         return binding.root
+    }
+    override fun onPause() {
+        super.onPause()
+        val quoteViewModel = ViewModelProvider(this).get(QuotesViewModel::class.java)
+        quoteViewModel.cambiar()
     }
 }

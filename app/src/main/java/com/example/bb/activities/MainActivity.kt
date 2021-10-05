@@ -12,9 +12,9 @@ import com.example.bb.models.Characters
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), CharacterListFragment.CharacterSelectListener{
 
-    private lateinit var movieProfileFragment: CharacterListFragment
+    private lateinit var characterProfileFragment: CharacterListFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,11 +40,12 @@ class MainActivity : AppCompatActivity() {
             }
         }.attach()
     }
-     fun onCharacterSelected(characters: Characters) {
+     override fun onCharacterSelected(characters: Characters) {
         Log.i("edg","Movie Load On MainActivity: ${characters.name}")
         val intent = Intent (this, DetailActivity::class.java).apply {
             putExtra(DetailActivity.CHARACTER_KEY,characters)
         }
+         startActivity(intent)
     }
 
 }
