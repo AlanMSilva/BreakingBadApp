@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#2E3B43"
+        android:background="#3E4151"
         tools:context=".fragments.QuotesFragment">
 
         <TextView
@@ -19,6 +19,7 @@
             android:layout_centerInParent="true"
             android:text="TextView"
             android:textSize="35sp"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,10 +33,11 @@
             android:layout_below="@+id/random_quotes"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
             android:layout_alignParentBottom="true"
             android:text="TextView"
-            android:textStyle="bold"
             android:textSize="35sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

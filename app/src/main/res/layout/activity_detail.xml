@@ -15,6 +15,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#3E4151"
             tools:context=".activities.DetailActivity">
 
             <ImageView
@@ -41,6 +42,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="32dp"
+                android:textAlignment="center"
                 android:text="TextView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -52,6 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/nameDetail"
+                android:textAlignment="center"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="17dp"
                 android:layout_marginEnd="32dp"
@@ -63,6 +66,7 @@
 
             <TextView
                 android:id="@+id/statusDetail"
+                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/nicknameDetail"
@@ -77,6 +81,7 @@
 
             <TextView
                 android:id="@+id/birthdayDetail"
+                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/statusDetail"
@@ -91,6 +96,7 @@
 
             <TextView
                 android:id="@+id/ocupationDetail"
+                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/birthdayDetail"
@@ -105,6 +111,7 @@
 
             <TextView
                 android:id="@+id/actorNameDetail"
+                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ocupationDetail"
